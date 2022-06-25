@@ -1,0 +1,26 @@
+.list-item {
+  align-items: center;
+  border-radius: 12px;
+  border: solid black 1px;
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 30px;
+  width: auto;
+
+  &__title {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+  }
+
+  &__price {
+    background-color: rgb(41, 55, 129);
+    border-radius: 12px;
+    border: solid black 1px;
+    color: white;
+    display: block;
+    margin: 20px 20px;
+    padding: 20px 30px;
+    width: auto;
+  }
+}
