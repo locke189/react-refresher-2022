@@ -1,5 +1,16 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "env": {
+    "browser": true, // Enables browser globals like window and document
+    "jest/globals": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:testing-library/react",
+    "plugin:jest/all",
+    "prettier"
+  ],
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module",
@@ -9,6 +20,7 @@
   },
   "rules": {
     "no-unused-vars": "error",
-    "react/prop-types": false
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": 0
   }
 }

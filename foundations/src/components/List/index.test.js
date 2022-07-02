@@ -19,9 +19,10 @@ const listItems = [
   },
 ]
 
-describe('List component', () => {
-  const {container} = render(<List items={listItems}/>)
-  it('It should render listItems', () => {
+describe('list component', () => {
+  it('should render listItems', () => {
+    expect.assertions(1)
+    render(<List items={listItems}/>)
     const coconuts = screen.getAllByTestId("list-item");
     console.log(coconuts)
     expect(coconuts).toBeTruthy()
